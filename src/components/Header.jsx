@@ -1,9 +1,12 @@
 import Navigation from './Navigation';
+import Logo from '../assets/ddd-logo.png';
+
 const Header = () => {
   return (
-    <div>
+    <header className='header-container'>
+      <img className='site-brand' src={Logo} alt='Logo' />
       <Navigation />
-    </div>
+    </header>
   );
 };
 

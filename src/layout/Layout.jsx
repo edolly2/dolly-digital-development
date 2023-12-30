@@ -9,17 +9,22 @@ import { Routes, Route } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <>
+    <div className='site-layout'>
       <Header />
-      <Page>
-        <Routes>
-          <Route index path='/' element={HomePage} />
-          <Route path='about' element={AboutPage} />
-          <Route path='*' element={NoPage} />
-        </Routes>
-      </Page>
+      {/* <div>
+        <h1 className='site-title'>Dolly Digital Development</h1>
+      </div> */}
+      <div className='page-container'>
+        <Page>
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='*' element={<NoPage />} />
+          </Routes>
+        </Page>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

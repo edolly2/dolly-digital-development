@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
-const Page = ({ children }) => {
-  return <div>{children}</div>;
+const Page = (props) => {
+  return <main className='page-content'>{props.children}</main>;
 };
 
 export default Page;
