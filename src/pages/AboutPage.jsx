@@ -1,7 +1,9 @@
+import PageTitle from '../layout/PageTitle';
+
 const AboutPage = () => {
   return (
     <div>
-      <h1>AboutPage</h1>
+      <PageTitle title='About' />
     </div>
   );
 };

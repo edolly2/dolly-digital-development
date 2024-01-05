@@ -6,19 +6,20 @@ import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
 import NoPage from '../pages/NoPage';
 import { Routes, Route } from 'react-router-dom';
+import ContactPage from '../pages/ContactPage';
+import ServicesPage from '../pages/ServicesPage';
 
 const Layout = () => {
   return (
     <div className='site-layout'>
       <Header />
-      {/* <div>
-        <h1 className='site-title'>Dolly Digital Development</h1>
-      </div> */}
       <div className='page-container'>
         <Page>
           <Routes>
             <Route index element={<HomePage />} />
             <Route path='/about' element={<AboutPage />} />
+            <Route path='/services' element={<ServicesPage />} />
+            <Route path='/contact' element={<ContactPage />} />
             <Route path='*' element={<NoPage />} />
           </Routes>
         </Page>

@@ -1,16 +1,36 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <>
       <nav className='nav-container'>
         <ul className='nav-list'>
-          <li>
+          <li className='nav-list-item'>
+            <NavLink className='nav-link' exact to='/'>
+              Home
+            </NavLink>
+          </li>
+          <li className='nav-list-item'>
+            <NavLink className='nav-link' to='/about'>
+              About
+            </NavLink>
+          </li>
+          <li className='nav-list-item'>
+            <NavLink className='nav-link' to='/services'>
+              Services
+            </NavLink>
+          </li>
+          <li className='nav-list-item'>
+            <NavLink className='nav-link' to='/contact'>
+              Contact
+            </NavLink>
+          </li>
+          {/* <li className='nav-list-item'>
             <Link to='/'>Home</Link>
           </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
+          <li className='nav-list-item'>
+            <Link to='/'>Home</Link>
+          </li> */}
         </ul>
       </nav>
 
